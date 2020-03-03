@@ -90,7 +90,7 @@ class UsersController extends Controller
 
     protected function sendEmailConfirmationTo($user)
     {
-        $view = 'emails.confirm';
+        $view = 'password.confirm';
         $data = compact('user');
         $from = 'summer@example.com';
         $name = 'Summer';
